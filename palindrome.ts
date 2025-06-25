@@ -3,7 +3,10 @@ function isPalindrome(x: number): boolean {
   const checkPal = stringNum.split("");
   for (let i = 0; i <= checkPal.length; i++) {
     let j = checkPal.length - 1 - i;
-    if (checkPal[i] !== checkPal[j]) return false;
+    for (let j = checkPal.length - 1 - i; j >= 0; j--) {
+      if (checkPal[i] !== checkPal[j]) return false;
+      break;
+    }
   }
   return true;
 }
