@@ -1,4 +1,4 @@
-const arr = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+const arr26 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
 
 function removeDuplicates(nums: number[]): number {
   for (let i = nums.length; i >= 0; i--) {
@@ -8,4 +8,7 @@ function removeDuplicates(nums: number[]): number {
   }
   return nums.length;
 }
-const noDups = removeDuplicates(arr)
+const noDups = removeDuplicates(arr26);
+
+console.log(noDups);
+console.log(removeDuplicates(arr26));
